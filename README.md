@@ -1,2 +1,2 @@
 # odin-landing-page
-Second TOP project
+This is my second TOP project called a landing page.
