@@ -10,27 +10,29 @@ body {
   flex-direction: column;
 }
 
-.header,
-.footer {
+/*========== HEADER ==========*/
+
+.header-bg {
   background-color: #1f2937;
 }
 
-/*========== HEADER ==========*/
-
-.header {
+.header-container {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   gap: 100px;
   padding: 20px 250px 100px;
 }
 
-.main-nav {
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo {
+.nav-logo {
   font-size: 24px;
   color: #f9faf8;
   margin: 0;
@@ -49,23 +51,23 @@ li > a {
   color: #e5e7eb;
 }
 
-.main-hero {
+.hero-container {
   display: flex;
   justify-content: space-between;
 }
 
-.sub-hero {
-  flex: 0 1 45%;
+.hero-info {
+  flex: 0 0 41%;
 }
 
-.main-hero-text {
+.m-hero-text {
   font-size: 48px;
   font-weight: 800;
   color: #f9faf8;
   margin: 0;
 }
 
-.secondary-hero-text {
+.s-hero-text {
   font-size: 18px;
   color: #e5e7eb;
   margin: 2px 0 12px;
@@ -80,7 +82,7 @@ li > a {
   border-radius: 7px;
 }
 
-.placeholder {
+.hero-placeholder {
   flex: 0 1 50%;
   display: flex;
   justify-content: center;
@@ -89,9 +91,10 @@ li > a {
   color: #e5e7eb;  
 }
 
-/*========== HEADER ==========*/
+/*========== BODY ==========*/
 
 .body {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +105,9 @@ li > a {
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  padding: 50px 350px 100px;
+  padding: 100px 250px 100px;
+  max-width: 100rem;
+  border: 5px solid purple;
 }
 
 .information > h2 {
@@ -143,6 +148,7 @@ li > a {
   justify-content: center;
   background-color: #e5e7eb;
   padding: 100px 350px 100px;
+  border: 2px solid blue;;
 }
 
 .quote > article {
@@ -156,4 +162,36 @@ li > a {
   font-size: 24px;
   font-weight: 700;
   text-align: right;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+  border: 2px solid black;
+}
+
+.sign-up-text {
+  flex: 1;
+  border: 1px solid red;
+}
+
+.sign-up-button {
+  flex: 1;
+  border: 1px solid blue;
+}
+
+/*========== FOOTER ==========*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.footer > p {
+  font-size: 18px;
+  color: #e5e7eb;
 }
